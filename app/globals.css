@@ -18,3 +18,132 @@ body {
   background: var(--color-cream);
   color: var(--color-ink);
 }
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes arch-in {
+  from {
+    opacity: 0;
+    transform: translate(-1rem, -1rem);
+  }
+}
+
+@keyframes parallax {
+  from {
+    transform: translateY(-4%) scale(1.08);
+  }
+  to {
+    transform: translateY(4%) scale(1.08);
+  }
+}
+
+@keyframes pulse-ring {
+  from {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  to {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-0.5rem);
+  }
+}
+
+@utility enter {
+  animation: fade-up 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility enter-delay-1 {
+  animation-delay: 150ms;
+}
+
+@utility enter-delay-2 {
+  animation-delay: 300ms;
+}
+
+@utility enter-delay-3 {
+  animation-delay: 450ms;
+}
+
+@utility enter-delay-4 {
+  animation-delay: 600ms;
+}
+
+@utility enter-zoom {
+  animation: zoom-out 1.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility enter-arch {
+  animation: arch-in 1.4s 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@utility enter-fade {
+  animation: fade-in 0.8s ease-out both;
+}
+
+@utility float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@utility pulse-ring {
+  animation: pulse-ring 2s ease-out infinite;
+}
+
+@supports (animation-timeline: view()) {
+  .reveal {
+    animation: fade-up linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 30%;
+  }
+
+  .reveal-zoom {
+    animation: zoom-out linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+  }
+
+  .parallax {
+    animation: parallax linear both;
+    animation-timeline: view();
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0s !important;
+  }
+}
