@@ -4,6 +4,10 @@ export const whatsappLink = (text = "Olá, Dra. Patrícia! Gostaria de agendar u
   `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
 export const site = {
+  url: "https://clinicapatriciachagas.com.br",
+  name: "Dra. Patrícia Chagas",
+  description:
+    "Harmonização facial em Taubaté-SP com naturalidade e propósito. Rinomodelação, preenchimento labial, toxina botulínica, bioestimulador de colágeno e mais. Agende sua avaliação.",
   phone: "(12) 98188-6549",
   instagram: "https://www.instagram.com/drapattichagas/",
   instagramHandle: "@drapattichagas",
@@ -11,6 +15,8 @@ export const site = {
   crbm: "CRBM 35486",
   address: "R. Jurandir Martins Filho, 35, Sala 204",
   city: "Taubaté - SP",
+  locality: "Taubaté",
+  region: "SP",
 };
 
 export const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(

@@ -2,6 +2,7 @@ import { Contato } from "./_components/contato";
 import { Footer } from "./_components/footer";
 import { Header } from "./_components/header";
 import { Hero } from "./_components/hero";
+import { JsonLd } from "./_components/json-ld";
 import { Procedimentos } from "./_components/procedimentos";
 import { Resultados } from "./_components/resultados";
 import { Sobre } from "./_components/sobre";
@@ -9,6 +10,7 @@ import { WhatsappFloat } from "./_components/whatsapp-float";
 
 const Home = () => (
   <>
+    <JsonLd />
     <Header />
     <main>
       <Hero />

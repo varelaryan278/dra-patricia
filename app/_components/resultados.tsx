@@ -35,7 +35,7 @@ export const Resultados = () => (
           <li key={caso.src} className="reveal-zoom overflow-hidden">
             <Image
               src={caso}
-              alt={`Antes e depois — caso ${index + 1}`}
+              alt={`Antes e depois de harmonização facial com a Dra. Patrícia Chagas — caso ${index + 1}`}
               placeholder="blur"
               sizes="(min-width: 768px) 33vw, 50vw"
               className="aspect-square w-full object-cover transition-[scale] duration-700 ease-out hover:scale-105"

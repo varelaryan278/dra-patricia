@@ -13,7 +13,7 @@ export const Sobre = () => (
       <div className="reveal overflow-hidden">
         <Image
           src={draFoto}
-          alt="Dra. Patrícia Chagas em retrato"
+          alt="Retrato da Dra. Patrícia Chagas, biomédica esteta"
           placeholder="blur"
           sizes="(min-width: 768px) 40vw, 100vw"
           className="parallax aspect-[4/5] w-full object-cover"

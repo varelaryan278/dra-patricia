@@ -25,9 +25,11 @@ export const Contato = () => (
           <div>
             <dt className="text-xs tracking-[0.3em] text-cream/50 uppercase">Endereço</dt>
             <dd className="mt-1">
-              {site.address}
-              <br />
-              {site.city}
+              <address className="not-italic">
+                {site.address}
+                <br />
+                {site.city}
+              </address>
             </dd>
           </div>
           <div>

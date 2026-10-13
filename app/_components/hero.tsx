@@ -7,12 +7,14 @@ export const Hero = () => (
   <section id="inicio" className="relative overflow-hidden">
     <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pt-10 pb-16 md:grid-cols-2 md:gap-16 md:pt-16 md:pb-24">
       <div className="order-2 md:order-1">
-        <p className="enter enter-delay-1 text-xs tracking-[0.35em] text-bronze uppercase">Harmonização Facial · Taubaté</p>
-        <h1 className="enter enter-delay-2 mt-5 font-serif text-5xl leading-[1.05] font-light text-ink md:text-7xl">
+        <h1 className="enter enter-delay-1 text-xs font-normal tracking-[0.35em] text-bronze uppercase">
+          Dra. Patrícia Chagas · Harmonização Facial em Taubaté
+        </h1>
+        <p className="enter enter-delay-2 mt-5 font-serif text-5xl leading-[1.05] font-light text-ink md:text-7xl">
           Naturalidade
           <br />
           <em className="text-bronze">e propósito.</em>
-        </h1>
+        </p>
         <p className="enter enter-delay-3 mt-6 max-w-md text-lg leading-relaxed text-ink/75">
           Não existe uma fórmula para harmonizar. Cada rosto pede uma análise, um planejamento e uma
           estratégia.
@@ -42,7 +44,7 @@ export const Hero = () => (
         <div className="enter-arch absolute -inset-3 translate-x-4 translate-y-4 rounded-t-full border border-bronze/30 md:-inset-4" />
         <Image
           src={draFoto}
-          alt="Dra. Patrícia Chagas"
+          alt="Dra. Patrícia Chagas, biomédica especialista em harmonização facial em Taubaté"
           placeholder="blur"
           preload
           sizes="(min-width: 768px) 50vw, 100vw"
