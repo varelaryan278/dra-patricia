@@ -4,7 +4,7 @@ import { InstagramIcon, WhatsappIcon } from "./icons";
 export const Contato = () => (
   <section id="contato" className="scroll-mt-20 bg-ink py-20 text-cream md:py-28">
     <div className="mx-auto grid max-w-6xl gap-12 px-5 md:grid-cols-2 md:gap-20">
-      <div>
+      <div className="reveal">
         <p className="text-xs tracking-[0.35em] text-bronze uppercase">Contato</p>
         <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
           Sua melhor versão <em className="text-[#c9a891]">começa com uma conversa.</em>
@@ -49,7 +49,7 @@ export const Contato = () => (
         title="Localização do consultório da Dra. Patrícia Chagas"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        className="h-80 w-full grayscale-[60%] md:h-full md:min-h-96"
+        className="reveal h-80 w-full grayscale-[60%] transition-[filter] duration-700 hover:grayscale-0 md:h-full md:min-h-96"
       />
     </div>
   </section>

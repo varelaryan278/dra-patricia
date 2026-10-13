@@ -13,7 +13,7 @@ const casos = [caso3, caso5, caso6, caso1, caso4, caso2];
 export const Resultados = () => (
   <section id="resultados" className="scroll-mt-20 pb-20 md:pb-28">
     <div className="mx-auto max-w-6xl px-5">
-      <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div className="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div className="max-w-2xl">
           <p className="text-xs tracking-[0.35em] text-bronze uppercase">Resultados</p>
           <h2 className="mt-4 font-serif text-4xl leading-tight font-light md:text-5xl">
@@ -32,13 +32,13 @@ export const Resultados = () => (
       </div>
       <ul className="mt-12 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
         {casos.map((caso, index) => (
-          <li key={caso.src}>
+          <li key={caso.src} className="reveal-zoom overflow-hidden">
             <Image
               src={caso}
               alt={`Antes e depois — caso ${index + 1}`}
               placeholder="blur"
               sizes="(min-width: 768px) 33vw, 50vw"
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full object-cover transition-[scale] duration-700 ease-out hover:scale-105"
             />
           </li>
         ))}

@@ -10,7 +10,7 @@ const links = [
 ];
 
 export const Header = () => (
-  <header className="sticky top-0 z-40 border-b border-bronze/15 bg-cream/90 backdrop-blur">
+  <header className="enter-fade sticky top-0 z-40 border-b border-bronze/15 bg-cream/90 backdrop-blur">
     <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:h-20">
       <a href="#inicio" aria-label="Dra. Patrícia Chagas — início" className="flex items-center gap-3">
         <Image src={logo} alt="" className="h-9 w-auto md:h-11" loading="eager" />
